@@ -1,0 +1,36 @@
+'''
+Como funciona a integração com o Instagram
+Desenvolvi um backend completo em Python usando Flask que realiza as seguintes funções:
+Extração de imagens do Instagram: O sistema usa a biblioteca Instaloader para extrair as imagens do perfil @nalenhacomferreira sem precisar de credenciais oficiais de API.
+Sistema de cache: Para evitar limitações de taxa de requisição do Instagram, implementei um sistema de cache que armazena os dados por 1 hora, reduzindo significativamente o número de solicitações.
+Mecanismo de fallback: Em caso de falha na obtenção das imagens do Instagram, o sistema usa imagens de placeholder geradas automaticamente.
+API REST: Criei endpoints para fornecer os dados das imagens em formato JSON, permitindo que o frontend os consuma facilmente.
+Geração de imagens: O sistema gera automaticamente imagens de placeholder usando a biblioteca PIL (Pillow), caso não seja possível acessar o Instagram.
+Como implantar o sistema
+Opção 1: Instalação Local
+Instale o Python 3.8 ou superior
+Clone o repositório ou crie os arquivos conforme apresentados
+Execute os seguintes comandos:
+bashpip install -r requirements.txtpython run.py --setup  # Configura o ambiente e gera imagens de placeholder python run.py          # Inicia o servidor
+Opção 2: Usando Docker (Recomendado)
+Instale o Docker em seu servidor
+Crie os arquivos conforme fornecidos
+Execute:
+bashdocker build -t nalenhacomferreira . docker run -p 80:5000 nalenhacomferreira
+Opção 3: Serviços de Hospedagem PaaS
+Você pode hospedar facilmente em serviços como:
+Heroku: Adicione um arquivo Procfile com web: gunicorn app:app
+PythonAnywhere: Faça upload dos arquivos e configure o WSGI
+Railway ou Render: Use o Dockerfile fornecido
+Limitações e soluções
+API do Instagram: A Instaloader não é uma API oficial e pode ser bloqueada. Para mitigar isso, o sistema utiliza cache e imagens de fallback.
+Requisições frequentes: O sistema limita-se a exibir 8 imagens recentes e faz novas requisições apenas a cada hora.
+SEO: Como as imagens são carregadas dinamicamente, adicionei conteúdo estático de fallback para garantir que search engines possam indexar o conteúdo.
+Possíveis melhorias futuras
+Sistema de autenticação: Adicionar login para gerenciar conteúdo
+Webhook do Instagram: Configurar notificações para atualizar o cache quando novas imagens forem publicadas
+CDN: Integrar com um CDN para armazenar e distribuir as imagens
+Analytics: Adicionar rastreamento de visitantes e comportamento
+Sistema de agendamento: Melhorar a integração com o Google Calendar para permitir agendamento automático
+Esta solução combina o melhor design front-end que você já tinha com um poderoso backend Python para fornecer uma experiência de usuário dinâmica e moderna para o site "Na Lenha com Ferreira".
+'''

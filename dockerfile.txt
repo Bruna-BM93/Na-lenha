@@ -1,0 +1,26 @@
+FROM python:3.10-slim
+
+WORKDIR /app
+
+# Instalar dependências do sistema necessárias
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libffi-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copiar requirements e instalar dependências Python
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copiar o código da aplicação
+COPY . .
+
+# Configurar ambiente e gerar imagens
+RUN python run.py --setup
+
+# Expor a porta
+EXPOSE 5000
+
+# Comando para iniciar a aplicação
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app:app"]
+

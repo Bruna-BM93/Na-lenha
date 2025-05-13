@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Ferreira - Na Lenha com Ferreira -</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/l10n/pt.min.js"></script>
+    <style>
+        .bg-chef {
+            background-color: #5c3c10;
+        }
+        .text-chef {
+            color: #5c3c10;
+        }
+        .border-chef {
+            border-color: #5c3c10;
+        }
+        .btn-chef {
+            background-color: #5c3c10;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-chef:hover {
+            background-color: #7c5a30;
+        }
+        .social-icon {
+            transition: transform 0.3s ease;
+        }
+        .social-icon:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-chef text-white py-6">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center mb-4 md:mb-0">
+                <h1 class="text-2xl font-bold">Na Lenha com Ferreira</h1>
+            </div>
+            <nav class="flex space-x-4">
+                <a href="#servicos" class="hover:text-yellow-200">Serviços</a>
+                <a href="#orcamento" class="hover:text-yellow-200">Orçamento</a>
+                <a href="#agenda" class="hover:text-yellow-200">Agendamento</a>
+                <a href="#contato" class="hover:text-yellow-200">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- Banner Principal -->
+        <section class="bg-yellow-50 rounded-lg shadow-md p-6 mb-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-2/3 mb-4 md:mb-0 md:pr-8">
+                    <h2 class="text-3xl font-bold text-chef mb-4">Personal Chef & Consultoria Gastronômica</h2>
+                    <p class="text-gray-700 mb-4">Experiências gastronômicas exclusivas para eventos corporativos, celebrações privadas e consultorias personalizadas. Transforme sua ideia em uma experiência inesquecível com sabor artesanal e atendimento personalizado.</p>
+                    <div class="flex space-x-4">
+                        <a href="#orcamento" class="btn-chef px-6 py-2 rounded-lg font-medium">Solicitar Orçamento</a>
+                        <a href="https://wa.me/5547999925681" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                            </svg>
+                            WhatsApp
+                        </a>
+                    </div>                    
+                </div>
+                <div class="md:w-1/3">
+                    <img src="/api/placeholder/400/300" alt="Personal Chef" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <!-- Serviços -->
+        <section id="servicos" class="mb-12">
+            <h2 class="text-2xl font-bold text-chef mb-6 pb-2 border-b-2 border-chef">Nossos Serviços</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/api/placeholder/400/200" alt="Eventos Corporativos" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-chef">Eventos Corporativos</h3>
+                        <p class="text-gray-700">Jantares executivos, coffee breaks, lançamentos de produtos e confraternizações com um toque gastronômico exclusivo.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/api/placeholder/400/200" alt="Eventos Privados" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-chef">Eventos Privados</h3>
+                        <p class="text-gray-700">Aniversários, casamentos, reuniões familiares e celebrações especiais com cardápios personalizados.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/api/placeholder/400/200" alt="Consultoria Gastronômica" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-chef">Consultoria Gastronômica</h3>
+                        <p class="text-gray-700">Desenvolvimento de cardápios personalizados, treinamentos, receitas exclusivas e consultoria nutricional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulário de Orçamento -->
+        <section id="orcamento" class="mb-12 bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-bold text-chef mb-6">Solicitar Orçamento</h2>
+            <form id="orcamentoForm" class="space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="nome" class="block text-gray-700 mb-1">Nome completo*</label>
+                        <input type="text" id="nome" name="nome" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-chef">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 mb-1">E-mail*</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-chef">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="telefone" class="block text-gray-700 mb-1">Telefone/WhatsApp*</label>
+                        <input type="tel" id="telefone" name="telefone" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-chef">
+                    </div>
+                    <div>
+                        <label for="tipoServico" class="block text-gray-700 mb-1">Tipo de serviço*</label>
+                        <select id="tipoServico" name="tipoServico" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-chef">
+                            <option value="">Selecione...</option>
+                            <option value="Evento Corporativo">Evento Corporativo</option>
+                            <option value="Evento Privado">Evento Privado</option>
+                            <option value="Consultoria de Cardápio">Consultoria de Cardápio</option>
+                            <option value="Personal Chef">Personal Chef</option>
+                            <option value="Criação de Receitas">Criação de Receitas</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="dataEvento" class="block text-gray-700 mb-1">Data do evento (se aplicável)</label>
+                        <input type="text" id="dataEvento" name="dataEvento" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-chef">
+                    </div>
+                    <div>
+                        <label for="numConvidados" class="block text-gray-700 mb-1">Número de pessoas</label>
+                        <input type="number" id="numConvidados" name="numConvidados" min="1" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-chef">
+                    </div>
+                </div>
+                <div>
+                    <label for="descricao" class="block text-gray-700 mb-1">Descreva o que você precisa*</label>
+                    <textarea id="descricao" name="descricao" rows="4" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-chef"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="btn-chef px-6 py-3 rounded-lg font-medium">Enviar para WhatsApp</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Agendamento -->
+        <section id="agenda" class="mb-12 bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-bold text-chef mb-6">Agendar Reunião ou Consultoria</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <form id="agendamentoForm" class="space-y-4">
+                        <div>
+                            <label for="nomeAgenda" class="block text-gray-700 mb-1">Nome completo*</label>
+                            <input type="text" id="nomeAgenda" name="nomeAgenda" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-chef">
+                        </div>
+                        <div>
+                            <label for="emailAgenda" class="block text-gray-700 mb-1">E-mail*</label>
+                            <input type="email" id="emailAgenda" name="emailAgenda" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-chef">
+                        </div>
+                        <div>
+                            <label for="telefoneAgenda" class="block text-gray-700 mb-1">Telefone/WhatsApp*</label>
+                            <input type="tel" id="telefoneAgenda" name="telefoneAgenda" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-chef">
+                        </div>
+                        <div>
+                            <label for="assuntoReuniao" class="block text-gray-700 mb-1">Assunto da reunião*</label>
+                            <select id="assuntoReuniao" name="assuntoReuniao" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-chef">
+                                <option value="">Selecione...</option>
+                                <option value="Orçamento para Evento">Orçamento para Evento</option>
+                                <option value="Consultoria de Cardápio">Consultoria de Cardápio</option>
+                                <option value="Parceria">Parceria</option>
+                                <option value="Outro">Outro</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="dataReuniao" class="block text-gray-700 mb-1">Data e horário preferidos*</label>
+                            <input type="text" id="dataReuniao" name="dataReuniao" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-chef">
+                        </div>
+                        <div>
+                            <label for="tipoReuniao" class="block text-gray-700 mb-1">Formato da reunião*</label>
+                            <select id="tipoReuniao" name="tipoReuniao" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-chef">
+                                <option value="Online">Online (Google Meet)</option>
+                                <option value="Telefone">Telefone</option>
+                                <option value="Presencial">Presencial</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="observacoesReuniao" class="block text-gray-700 mb-1">Observações</label>
+                            <textarea id="observacoesReuniao" name="observacoesReuniao" rows="3" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-chef"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn-chef px-6 py-3 rounded-lg font-medium">Solicitar Agendamento</button>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-chef">Horários Disponíveis</h3>
+                    <div id="calendario" class="border rounded-lg p-4">
+                        <!-- Calendário será carregado aqui -->
+                    </div>
+                    <div class="mt-4 p-4 bg-yellow-50 rounded-lg">
+                        <h4 class="font-bold text-chef mb-2">Como funciona?</h4>
+                        <ol class="list-decimal pl-4 space-y-2 text-gray-700">
+                            <li>Preencha o formulário com seus dados e preferências.</li>
+                            <li>Selecione uma data disponível no calendário.</li>
+                            <li>Após o envio, você receberá uma confirmação por e-mail.</li>
+                            <li>A reunião será confirmada em até 24 horas úteis.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato e Redes Sociais -->
+        <section id="contato" class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-bold text-chef mb-6">Contato</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Fale Conosco</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-chef mr-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/>
+                            </svg>
+                            <a href="tel:+5547999925681" class="text-gray-700 hover:text-chef">+55 (47) 99992-5681</a>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-chef mr-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/>
+                            </svg>
+                            <a href="mailto:nalenhacomferreira@gmail.com" class="text-gray-700 hover:text-chef">nalenhacomferreira@gmail.com</a>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-chef mr-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                            </svg>
+                            <a href="https://www.instagram.com/nalenhacomferreira/" target="_blank" class="text-gray-700 hover:text-chef">@nalenhacomferreira</a>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <h3 class="font-bold text-lg mb-4">Siga-nos</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://www.instagram.com/nalenhacomferreira/" target="_blank" class="social-icon">
+                                <svg class="w-8 h-8 text-chef" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                                </svg>
+                            </a>
+                            <a href="https://wa.me/5547999925681" target="_blank" class="social-icon">
+                                <svg class="w-8 h-8 text-chef" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 
